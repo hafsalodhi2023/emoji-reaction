@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="btn-container">
+      <button id="smile">Smile</button>
+      <button id="sad">Sad</button>
+      <button id="angry">Angry</button>
+      <button id="laughing">Laughing</button>
+    </div>
+    <div class="smile">
+      <img
+        src="https://em-content.zobj.net/thumbs/160/apple/81/smiling-face-with-smiling-eyes_1f60a.png"
+        alt="Smiling Face with Smiling Eyes on Apple iOS 10.2"
+      />
+    </div>
+    <div class="sad">
+      <img
+        src="https://em-content.zobj.net/thumbs/160/apple/354/sad-but-relieved-face_1f625.png"
+        alt="Sad but Relieved Face on Apple iOS 16.4"
+      />
+    </div>
+    <div class="angry">
+      <img
+        src="https://em-content.zobj.net/thumbs/160/apple/354/angry-face_1f620.png"
+        alt="Angry Face on Apple iOS 16.4"
+      />
+    </div>
+    <div class="laughing">
+      <img
+        src="https://em-content.zobj.net/thumbs/160/apple/354/rolling-on-the-floor-laughing_1f923.png"
+        alt="Rolling on the Floor Laughing on Apple iOS 16.4"
+      />
+    </div>
+    <script>
+      let smile = document.querySelector(".smile");
+      let sad = document.querySelector(".sad");
+      let angry = document.querySelector(".angry");
+      let laughing = document.querySelector(".laughing");
+
+      document.querySelector("#smile").addEventListener("click", function () {
+        smile.style.display = "block";
+        sad.style.display = "none";
+        angry.style.display = "none";
+        laughing.style.display = "none";
+      });
+      document.querySelector("#sad").addEventListener("click", function () {
+        sad.style.display = "block";
+        smile.style.display = "none";
+        angry.style.display = "none";
+        laughing.style.display = "none";
+      });
+      document.querySelector("#angry").addEventListener("click", function () {
+        angry.style.display = "block";
+        sad.style.display = "none";
+        smile.style.display = "none";
+        laughing.style.display = "none";
+      });
+      document
+        .querySelector("#laughing")
+        .addEventListener("click", function () {
+          laughing.style.display = "block";
+          sad.style.display = "none";
+          angry.style.display = "none";
+          smile.style.display = "none";
+        });
+    </script>
+  </body>
+</html>
